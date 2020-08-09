@@ -1,3 +1,3 @@
-<?php
- echo("https://t.me/s/kink_warp");
+<?php 
+  echo("https://t.me/s/kink_warp");
 ?>
