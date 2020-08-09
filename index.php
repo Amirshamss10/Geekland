@@ -1,5 +1,4 @@
 <?php 
-  <?php
   abstract class user_info
   {
     abstract protected function showMessage();
@@ -16,5 +15,4 @@
   }
   $user = new login();
   $user -> showMessage();
-?>
 ?>
