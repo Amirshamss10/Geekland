@@ -13,7 +13,7 @@
     protected $date;
     abstract protected function save_info();
   }
-  class show_info
+  class show_info extends index
   {
     public function save_info()
     {
