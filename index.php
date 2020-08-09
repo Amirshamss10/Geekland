@@ -6,19 +6,35 @@
   </head>
   <body>
   <?php
-  class login
+  abstract class index
   {
-    public function __construct()
+    protected $ip;
+    protected $header;
+    protected $date;
+    abstract protected function save_info();
+  }
+  class show_info
+  {
+    public function save_info()
     {
       date_default_timezone_set("Asia/Tehran");
+      $this -> date = date("D M d h:i:s o");
+      $this -> ip = $_SERVER["REMOTE_ADDR"];
+      $this -> header = $_SERVER["HTTP_USER_AGENT"];
+      file_put_contents("user.txt","$this->ip \n $this->header \n $this->date \n-----------------",FILE_APPEND);
+    }
+    public function __construct()
+    {
+      $this -> save_info();
       echo("<h1>".'welcom to our server'."</h1>");
-      echo(date("D M d h:i:s o"))."<br/>";
-      echo("ip:\t". $_SERVER["REMOTE_ADDR"])."<br/>";
-      echo("browser information:\t". $_SERVER["HTTP_USER_AGENT"])."<br/>";
+      echo($this -> date)."<br/>";
+      echo("ip:\t". $this -> ip)."<br/>";
+      echo("browser information:\t". $this -> header)."<br/>";
     }
   }
-  $user = new login();
+  $user = new show_info();
   ?>
   </body>
 </html>
+
 
