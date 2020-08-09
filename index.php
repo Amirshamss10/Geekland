@@ -9,8 +9,8 @@
     {
       date_default_timezone_set("Asia/Tehran");
       echo("<h1>".'welcom to our server'."</h1>");
-      echo(date("o/m/d g:i:s A"))."<br/>";
-      echo("ip:\t". $_SERVER["REMOTE_ADDR"])."<br/>";
+      echo(date("D M d h:i:s o")).PHP_EOL;
+      echo("ip:\t". $_SERVER["REMOTE_ADDR"]).PHP_EOL;
     }
   }
   $user = new login();
