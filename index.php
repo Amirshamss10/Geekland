@@ -8,7 +8,7 @@
     public function showMessage()
     {
       date_default_timezone_set("Asia/Tehran");
-      echo("<h1>".'welcom to our server'."</h1>")."<br/>";
+      echo("<h1>".'welcom to our server'."</h1>");
       echo(date("o/m/d g:i:s A"))."<br/>";
       echo("ip:\t". $SERVER["REMOTE_ADDR"])."<br/>";
     }
