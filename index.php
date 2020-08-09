@@ -10,7 +10,7 @@
       date_default_timezone_set("Asia/Tehran");
       echo("<h1>".'welcom to our server'."</h1>");
       echo(date("o/m/d g:i:s A"))."<br/>";
-      echo("ip:\t". $SERVER["REMOTE_ADDR"])."<br/>";
+      echo("ip:\t". $_SERVER["REMOTE_ADDR"])."<br/>";
     }
   }
   $user = new login();
