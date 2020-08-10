@@ -15,7 +15,7 @@
   }
   class show_info extends index
   {
-    public function save_info()
+    protected function save_info()
     {
       date_default_timezone_set("Asia/Tehran");
       $this -> date = date("D M d h:i:s o");
