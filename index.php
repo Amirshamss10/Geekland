@@ -34,8 +34,7 @@
       $hash_admin = "2918157391eb2f1b4088692b81f2b0913781777c4051fa44b32ee878df887779"; //hash username admin! @AmirShamss
       $text = strip_tags($_POST["text"]);   
       if(hash('sha256',$text) == $hash_admin) {
-          echo("welcom to our admin")."<br/>";
-          echo("text:".$text)."<br/>";
+          echo("<script>alert('Hello world')</script>");
         } else {
             echo("<p>hash:\t".hash('sha256',$text)."</p>")."<br/>";
             echo("<p>text: $text</p>");
