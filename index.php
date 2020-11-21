@@ -51,11 +51,10 @@
     </form>
     <?php 
   if(isset($_POST["submit"])) { 
-      $hash_admin = "2918157391eb2f1b4088692b81f2b0913781777c4051fa44b32ee878df887779"; //hash username admin! @AmirShamss
+      $hash_admin = "a35ccd0e00d0b739d14fc11ffaf32b72b0f352654e414611909b0230905e622f"; //hash username admin! @UserlandApp
       $text = strip_tags($_POST["text"]);   
       if(hash('sha256',$text) == $hash_admin) {
-          echo("<p>welcom to our admin</p>")."<br/>";
-          echo("<p>text:".$text."</p>")."<br/>";
+          echo("<script>alert('Hello world!join @py_group')</script>")."<br/>";
         } else {
             echo("<p>".hash('sha256',$text)."</p>")."<br/>";
             echo("<p>text: $text</p>");
