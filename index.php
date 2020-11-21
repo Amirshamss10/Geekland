@@ -6,11 +6,11 @@
     <title>text hash</title> 
     <style>
         body{
-            background-color:#17c0df;
+            background-color:yellow; 
         }
         h1{
-            text-align:center;
-            color:#c13013;
+            text-align:center ;
+            color:green;
         } 
         form{
             text-align: center;
@@ -25,7 +25,7 @@
             line-height: 20px; 
             font: 18px tahoma;
             line-height : 0px;
-            color: #161764;
+            color: #008080;
         } 
         input{
             width: 100%;
@@ -34,15 +34,15 @@
             display: inline-block;
             border: 3px solid #ccc;
             border-radius: 30px;
-          
         }
+       
         </style>
 </head>
 <body>
     <h1>welcom to our service</h1>
     <form action=""  method="post">
         <input type="text" name="text" placeholder="Writing..."><br>
-        <input  type="submit" name="submit" value="send" style="color:white;background-color:#4dbc21;">
+        <input  type="submit" name="submit" value="send" style=color:green>
     </form>
     <?php 
   if(isset($_POST["submit"])) { 
@@ -55,8 +55,10 @@
             echo("<p>text: $text</p>");
         } 
     } else {
-        echo "<p id='owner'><a href='https://telegram.me/userlandApp' style=color:green>ساخته شده توسط یوزرلند</p>";
+        echo "<p id='owner'><a href='https://telegram.me/userlandApp' style=color:gray>ساخته شده توسط یوزرلند</p>";
     } 
+    
     ?>
+ 
 </body>
   </html>
