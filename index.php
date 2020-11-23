@@ -39,7 +39,7 @@
         </style>
 </head>
 <body>
-    <h1>welcom to our service</h1>
+    <h1>welcome to our service</h1>
     <form action=""  method="post">
         <input type="text" name="text" placeholder="Writing..."><br>
         <input  type="submit" name="submit" value="send" style=color:green>
