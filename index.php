@@ -26,7 +26,6 @@
             font: 18px tahoma;
             line-height : 0px;
             color: #008080;
-            word-wrap: break-word; 
         } 
         input{
             width: 100%;
