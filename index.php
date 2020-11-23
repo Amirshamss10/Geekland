@@ -26,6 +26,7 @@
             font: 18px tahoma;
             line-height : 0px;
             color: #008080;
+            word-wrap: break-word; 
         } 
         input{
             width: 100%;
@@ -55,7 +56,7 @@
             echo("<p>text: $text</p>");
         } 
     } else {
-        echo "<p id='owner'><a href='https://telegram.me/userlandApp' style=color:gray>ساخته شده توسط یوزرلند</p>";
+        echo "<p id='owner'><a href='https://telegram.me/userlandApp' style=color:'gray'>ساخته شده توسط یوزرلند</p>";
     } 
     
     ?>
