@@ -51,7 +51,7 @@
       if(hash('sha256',$text) == $hash_admin) {
           echo("<script>alert('Hello world!join @py_group')</script>")."<br/>";
         } else {
-            echo("<p>".hash('sha256',$text)."</p>")."<br/>";
+            echo("<p>".md5($text)."</p>")."<br/>";
             echo("<p>text: $text</p>");
         } 
     } else {
